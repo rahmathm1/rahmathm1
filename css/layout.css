@@ -1,0 +1,83 @@
+
+
+/* Header */
+
+html,body {
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	margin:0;
+}
+
+.clear {
+	clear: both;
+}
+.page-home {
+	height: 100%;
+	background-color: #ddd;
+	/*background-image: url(../images/rahmathm1.png);
+	background-repeat: no-repeat;
+	background-position: left;*/
+}
+.page-home h1 {
+	font-size: 72px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	margin-top: 200px;
+	border-bottom: 1px solid #aaa;
+}
+.page-home .rahmathm1 {
+	margin-top: 100px;
+	opacity: 0.3;
+	transition:1s;
+}
+.page-home .rahmathm1:hover {
+	margin-top: 100px;
+	opacity: 1;
+}
+.page-home .social-links {
+
+}
+.page-home .social-links ul {
+	list-style: none;
+	margin:30px 0;
+	padding:0;
+}
+.page-home .social-links ul  li{
+	float: left;
+	height: 50px;
+	margin-left: 10px;
+}
+.page-home .social-links ul  li:hover{
+
+}
+.page-home .social-links ul li a {
+	height: 50px;
+	width: 50px;
+	display: block;
+	color: #888;
+	line-height: 62px;
+	text-align: center;
+	border-radius: 50%;
+	transition:1s;
+}
+.page-home .social-links ul li a:hover {
+	color: #fff;
+}
+.page-home .social-links ul li:first-child {
+	margin-left: 0;
+}
+.page-home .social-links ul  li a.fb:hover {
+	background-color: #3b5996;
+}
+.page-home .social-links ul  li a.in:hover {
+	background-color: #1e88bd;
+}
+.page-home .social-links ul  li a.tw:hover {
+	background-color: #00acee;
+}
+.page-home .social-links ul  li a.gl:hover {
+	background-color: #c3391c;
+}
+.page-home .social-links ul  li a.gh:hover {
+	background-color: #333;
+}
