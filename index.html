@@ -11,16 +11,29 @@
 <title>rahmathm1</title>
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $('.about-me').bind('click',function() {
+		$('.page-home').addClass('opened');
+		$('.about-me').css('top','-100px');
+	});
+	$('.about-close').bind('click',function() {
+		$('.page-home').removeClass('opened');
+		$('.about-me').css('top','10px');
+	});
+});
+</script>
 </head>
 
 <body>
+<div class="about-me"><i class="fa fa-arrow-circle-down 3x"></i> About me</div>
 <div class="page-home">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6">
-				<img class="rahmathm1 img-responsive" src="images/rahmathm1.png" />
+			<div class="col-md-4">
+				<img class="rahmathm1 img-responsive" src="http://www.jeremygilby.com/Images/JRGAviClose.jpg" />
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-8">
 				<div class="row">
 					<div class="col-md-12">
 						<h1>Rahmathullah M</h1>
@@ -43,12 +56,14 @@
 			</div>
 		</div>		
 	</div>
+    <div class="about-close"><i class="fa fa-arrow-circle-up 3x"></i> Close</div>
 </div>
 <div class="page-content">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
-					<h2 class="in-progress">I'm still workin on this...</h2>
+					<h2 class="in-progress">Hi, I'm a mobile application developer with a focus on HTML5 mobile apps and an intense love of JavaScript.</h2>
+                    <!--<h2 class="in-progress">&lt;3</h2>-->
 			</div>
 		</div>		
 	</div>	
