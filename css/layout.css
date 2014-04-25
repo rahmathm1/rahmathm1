@@ -1,183 +1,167 @@
+.jumbotron {
 
-
-/* Header */
-
-html,body {
-	height:100px;
-	font-family: 'Lato', sans-serif;
-	margin:0;
 }
-
-.clear {
-	clear: both;
+.jumbotron h1{
+	text-align: center;
+	font-size: 82px;
+	margin-bottom: 0;
 }
-.about-me {
-	position: fixed;
-top: 10px;
-right: 50%;
-width: 200px;
-margin-right: -100px;
-color: #727272;
-cursor: pointer;
-text-align: center;
-font-weight: normal;
-font-size: 28px;
-font-family: 'The Girl Next Door', cursive;
-transition: 1s;
-z-index:600;
+.jumbotron p{
+	text-align: center;
 }
-.about-me:hover{
-	color:#fff;
-}
-.about-me i,.about-close i {
-	color:#C93;
-}
-.page-home {
-	background-color: #ddd;
-	height:0;
-	transition:1s;
-	overflow:hidden;
-	position:fixed;
-	top:0;
-	right:0;
-	left:0;
-	z-index:1000;
-	background-image: url(../images/header-bg.jpg);
-	background-size: 100% auto;
-	background-position: center;
-	-webkit-filter: grayscale(100%);
-	/*background-image: url(../images/rahmathm1.png);
+.jumbotron .big-img {
+	width: 200px;
+	height: 200px;
+	margin: 30px auto;
+	border: 1px solid #D9DFE0;
+	background-image:url(http://www.vacation.gr/images/ajax-loader.gif);
 	background-repeat: no-repeat;
-	background-position: left;*/
+	background-position: center;
 }
-.page-home:hover {
-	-webkit-filter: grayscale(0%);
+h3 i {
+	margin-right: 10px;
 }
-.page-home .container {
-	background:rgba(255,255,255,0.7)
+h3.subhead {
+	border-bottom: 1px solid #18bc9c;
+	padding-bottom: 10px;
 }
-.page-home.opened {
-	min-height:160px;
+.qualifications h4 span,.experiences h4 span{
+	font-size: 12px;
+	color: #999;
+	float: right;
+	font-weight: bold;
+	display: block;
+padding: 5px 0;
 }
-.page-home .about-close {
-	position:absolute;
-	bottom:0;
-	right:200px;
-	cursor:pointer;
-	font-weight: normal;
-	font-size: 28px;
-	font-family: 'The Girl Next Door', cursive;
-	transition:1s;
-	text-align:right;
+.qualifications h5,.experiences h5{
+	font-style: italic;	
+	color: #666;
+	font-size: 14px;
 }
-.page-home .about-close:hover{
-	color:#000;
+.qualifications h5{
+	margin-bottom: 20px;
 }
-.page-home h1 {
-	font-size: 72px;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	border-bottom: 1px solid #aaa;
+.experiences p{
+	font-size: 12px;
+color: #999;
 }
-.page-home .rahmathm1 {
-	opacity: 0.3;
-	transition:1s;
-	-webkit-filter: grayscale(100%);
+
+.projects .progress {
+	margin-bottom: 5px;
+margin-top: 10px;
 }
-.page-home .rahmathm1:hover {
-	opacity: 1;
-	-webkit-filter: grayscale(0%);
+
+footer {
+	padding:30px;
+	background-color: #2c3e50;
 }
-.page-home .social-links {
+footer .footer-links {
 
 }
-.page-home .social-links ul {
+footer .footer-links li {
+	display: inline;
+	margin-right: 10px;
+}
+
+.social-links {
+}
+.social-links ul {
 	list-style: none;
 	padding:0;
+	float: right;
 }
-.page-home .social-links ul  li{
+.social-links ul  li{
 	float: left;
 	height: 50px;
 	margin-left: 10px;
 }
-.page-home .social-links ul  li:hover{
+.social-links ul  li:hover{
 
 }
-.page-home .social-links ul li a {
-	height: 50px;
-	width: 50px;
+.social-links ul li a {
+	height: 30px;
+	width: 30px;
 	display: block;
 	color: #888;
-	line-height: 62px;
+	line-height: 32px;
 	text-align: center;
 	border-radius: 50%;
-	transition:1s;
+	transition:0.5s;
 }
-.page-home .social-links ul li a:hover {
+.social-links ul li a:hover {
 	color: #fff;
 }
-.page-home .social-links ul li:first-child {
+.social-links ul li:first-child {
 	margin-left: 0;
 }
-.page-home .social-links ul  li a.fb:hover {
+.social-links ul  li a.fb:hover {
 	background-color: #3b5996;
 }
-.page-home .social-links ul  li a.in:hover {
+.social-links ul  li a.in:hover {
 	background-color: #1e88bd;
 }
-.page-home .social-links ul  li a.tw:hover {
+.social-links ul  li a.tw:hover {
 	background-color: #00acee;
 }
-.page-home .social-links ul  li a.gl:hover {
+.social-links ul  li a.gl:hover {
 	background-color: #c3391c;
 }
-.page-home .social-links ul  li a.gh:hover {
+.social-links ul  li a.gh:hover {
 	background-color: #333;
 }
-.page-home .social-links ul  li a.ml:hover {
+.social-links ul  li a.ml:hover {
 	background-color: #82a026;
 }
-.page-home .social-links ul  li a.so:hover {
+.social-links ul  li a.so:hover {
 	background-color: #ff6f00;
 }
-.page-home .social-links ul  li a.bg:hover {
+.social-links ul  li a.bg:hover {
 	background-color: #aa1000;
 }
 
-
-.page-content {
-	background: #252525;
-	min-height:700px;
+.github-link .panel{
+	color: #666;
 }
-.page-content .big-hi {
-	margin-top: 100px;
-	font-size:100px;
-	text-align:center;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.61);
-}
-.page-content h2.message {
-	font-weight: normal;
-	font-family: 'The Girl Next Door', cursive;
-	color: #8D7864;
-	text-align: center;
-	margin-top: 50px;
-	text-shadow: 0px 1px 1px #111;
+.github-link .panel h4{
+	margin-left: 30px;
+	margin-top: 5px;
+	margin-bottom: 0;
+	color: #666;
 }
 
-.skill-set {
-	color:#ccc;
-	height:70px;
+.github-link .panel i,.github-link .panel h4 {
+	float: left;
 }
-.skill-set h1 {
-	text-align:center;
-	margin-top:60px;
-	font-family: 'Gafata', sans-serif;
-	color:#C93;
+
+.skillset h5{
+	float: left;
+	margin-right: 10px;
 }
-.skill-set .skill {
-	margin-top:20px;
-	text-align:center;
-	font-size:18px;
-	font-family: 'Gafata', sans-serif;
-	color:#8D7864;
+.skillset span{
+	padding: 7px 6px;
+}
+
+.stack-overflow .panel{
+ overflow: hidden;
+ border:1px solid #2c3e50;
+}
+.stack-overflow a {
+	width: 208px;
+display: block;
+float: right;
+margin: 5px;
+}
+.stack-overflow .icon{
+	height: 68px;
+	width: 68px;
+	float: left;
+
+ background: #2c3e50;
+}
+.stack-overflow i {
+
+float: left;
+padding: 15px;
+color: #fff;
+font-size: 2.5em;
 }

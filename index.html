@@ -1,93 +1,267 @@
-<!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css' />
-<link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css' />
-<link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/font-awesome-4.0.3/css/font-awesome.css">
-<link rel="stylesheet" type="text/css" href="css/layout.css">
-<title>rahmathm1</title>
-<script src="js/jquery-1.10.2.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(e) {
-    $('.about-me').bind('click',function() {
-		$('.page-home').addClass('opened');
-		$('.about-me').css('top','-100px');
-	});
-	$('.about-close').bind('click',function() {
-		$('.page-home').removeClass('opened');
-		$('.about-me').css('top','10px');
-	});
-});
-</script>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rahmathullah M</title>
 
-<body>
-<div class="about-me"><i class="fa fa-arrow-circle-down 3x"></i> About me</div>
-<div class="page-home">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<!--<img class="rahmathm1 img-responsive" src="http://www.jeremygilby.com/Images/JRGAviClose.jpg" />-->
-			</div>
-			<div class="col-md-8">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>Rahmathullah M</h1>
-					</div>
-				</div>
-				<div class="row">
-					<div class="social-links col-md-12">
-						<ul>
-							<!-- <li><a href="https://www.facebook.com/rahmath.pkl" class="fb"><i class="fa fa-facebook  fa-2x"></i></a></li> -->
-							<li><a href="https://twitter.com/rahmathullahm" class="tw"><i class="fa fa-twitter  fa-2x"></i></a></li>
-							<!-- <li><a href="https://plus.google.com/u/1/112209867848125818914/posts/p/pub" class="gl"><i class="fa fa-google-plus  fa-2x"></i></a></li> -->
-							<li><a href="http://www.linkedin.com/in/rahmathm1" class="in"><i class="fa fa-linkedin  fa-2x"></i></a></li>
-							<li><a href="https://github.com/rahmathm1/" class="gh"><i class="fa fa-github-alt  fa-2x"></i></a></li>
-							<!-- <li><a href="mailto:rahmathm1@gmail.com" class="ml"><i class="fa fa-envelope-o  fa-2x"></i></a></li> -->
-							<li><a href="http://stackoverflow.com/users/1470979/rahmathullah-m-pulikkal" class="so"><i class="fa fa-stack-overflow  fa-2x"></i></a></li>
-							<li><a href="http://rahmathslab.blogspot.in/" class="bg"><i class="fa fa-rss  fa-2x"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>		
-	</div>
-    <div class="about-close"><i class="fa fa-arrow-circle-up 3x"></i> Close</div>
-</div>
-<div class="page-content">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 col-md-offset-3">
-            		<h1 class="big-hi">Hi,</h1>
-					<h2 class="message">I'm a mobile application developer with a focus on HTML5 mobile apps and an intense love of JavaScript.</h2>
-                    <!--<h2 class="in-progress">&lt;3</h2>-->
-			</div>
-		</div>	
-        <div class="row skill-set">
-        	<div class="col-md-12">
-            	<h1>Skill set</h1>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/media-queries.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-4.0.3/css/font-awesome.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Rahmathullah M</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="http://rahmathm1.github.io/">Home</a></li>
+            <li><a href="http://about.me/rahmathullah">About Me</a></li>
+            <li><a href="http://rahmathsnotes.wordpress.com">My Blog</a></li> 
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="jumbotron">
+          <h1>Hi there,</h1>
+          <img class="img-responsive big-img img-circle" src="https://avatars0.githubusercontent.com/u/2988274?s=460" />
+          <div class="row">
+            <p class="col-md-8 col-md-offset-2">I'm a mobile application developer with a focus on HTML5 mobile apps and an intense love of JavaScript.</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="subhead"><i class="fa fa-quote-left"></i>Bio</h2>
+                <div class="panel panel-default experiences">
+                  <div class="panel-body">
+                    <p>I'm a mobile application developer with a focus on HTML5 mobile apps and an intense love of JavaScript.</p>
+                    <p>I'm committed to the work i do and i enjoy it. I do believe a work is successful only if its delivered on time with quality. Satisfaction can be achieved only by delivering stuffs on time, with no quality compromise.</p>
+                    <p>I've been in to software industry since 2012.</p>
+                    <p>Strengths includes strong problem solving skills, self learning, versatility.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="subhead"><i class="fa fa-building-o"></i>Experiences</h2>
+                <div class="panel panel-default experiences">
+                  <div class="panel-body">
+                    <h4><i class="fa fa-caret-right"></i> Nuevalgo Solutions<span>Novermber 2012 to Till</span></h4>
+                    <h5>Software Engineer</h5>
+                    <p> Identify requirements,Training session for Juniors, System Design, Database design, Application Development, Bug Fixing, Get in touch with clients to meet their expectations,Application Deployment.</p>
+                    <h4><i class="fa fa-caret-right"></i> Reubro International<span>June 2012 to October 2012</span></h4>
+                    <h5>Software Developer Trainee</h5>
+                    <p> Development, bug fixing, maintenance.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="row skillset">
+            <div class="col-md-12">
+              <h3 class="subhead"><i class="fa fa-tags"></i>Skills Set</h2>
+                  <h5>
+                    <span class="label label-primary">
+                    <i class="fa fa-tag"></i> BackboneJS</span>
+                  </h5>
+                  <h5>
+                    <span class="label label-primary">
+                    <i class="fa fa-tag"></i> AngularJS</span>
+                  </h5>
+                  <h5>
+                    <span class="label label-primary">
+                    <i class="fa fa-tag"></i> jQuery</span>
+                  </h5>
+                  <h5>
+                    <span class="label label-primary">
+                    <i class="fa fa-tag"></i> HTML5</span>
+                  </h5>
+                  <h5>
+                    <span class="label label-primary">
+                    <i class="fa fa-tag"></i> Android</span>
+                  </h5>
+                  <h5>
+                    <span class="label label-primary">
+                    <i class="fa fa-tag"></i> PHP</span>
+                  </h5>
+                  <h5>
+                    <span class="label label-primary">
+                    <i class="fa fa-tag"></i> ASP.net</span>
+                  </h5>
+                  <h5>
+                    <span class="label label-primary">
+                    <i class="fa fa-tag"></i> Sass</span>
+                  </h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="subhead"><i class="fa fa-book"></i>Qualifications</h2>
+                <div class="panel panel-default qualifications">
+                  <div class="panel-body">
+                    <h4><i class="fa fa-caret-right"></i> Master of Computer Applications<span>2009 to 2012</span></h4>
+                    <h5>Federal Institute of Science & Technology</h5>
+                    <h4><i class="fa fa-caret-right"></i> Bachelor of Computer Science<span>2005 to 2008</span></h4>
+                    <h5>EMEA College of Arts & Science</h5>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="subhead"><i class="fa fa-twitter"></i>Latest Tweets</h2>
+                <ul class="list-group twitterbox" id="js-twitterbox">
+                  <li class="list-group-item">
+                    Loading...
+                  </li>
+                </ul>
+            </div>
+          </div>
+          <div class="row projects">
+            <div class="col-md-12">
+              <h3 class="subhead"><i class="fa fa-suitcase"></i>Projects in</h2>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <span class="badge">3+</span>
+                    Android Java
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" style="width: 30%"></div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">4+</span>
+                    BackboneJS
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" style="width: 40%"></div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">1+</span>
+                    AngularJS
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" style="width: 20%"></div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">1+</span>
+                    jQuery Mobile
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" style="width: 10%"></div>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+          </div>
+          <div class="row stack-overflow ">
+            <div class="col-md-12">
+              <!--<div class="panel panel-default ">
+                  <div class="panel-body">
+                     <a href="#"><i class="fa fa-github fa-2x"></i> <h4>Fork me on GitHub</h4></a> 
+                     
+                   </div>
+              </div>-->
+              <div class="panel panel-default ">
+                  <div class="icon">
+                    <i class="fa fa-stack-overflow fa-3x"></i>
+                  </div>
+                  <a href="http://stackoverflow.com/users/1470979/rahmathullah-m-pulikkal">
+                        <img src="http://stackoverflow.com/users/flair/1470979.png?theme=clean" width="208" height="58" alt="profile for Rahmathullah M Pulikkal at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Rahmathullah M Pulikkal at Stack Overflow, Q&amp;A for professional and enthusiast programmers" />
+                  </a>
+               </div>
+            </div>
+          </div>
+          <div class="row github-link">
+            <div class="col-md-12">
+                 
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="subhead"><i class="fa fa-bar-chart-o"></i>Mile Stones</h2>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <span class="badge">Novermber 2012</span>
+                    Joined Nuevalgo Solutions
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">June 2012</span>
+                    Started Professional life
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">May 2012</span>
+                    Masters in Compater Application
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">June 2008</span>
+                    Graduated in Computer Science
+                  </li>
+                  <li class="list-group-item">
+                    <span class="badge">December 1987</span>
+                    I was born
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <div class="container">
+           <div class="row">
+              <div class="col-md-6">
+                <ul class="list-unstyled pull-left footer-links">
+                  <li><a href="#top">Home</a></li>
+                  <li><a href="http://about.me/rahmathullah">About Me</a></li>
+                  <li><a href="http://rahmathsnotes.wordpress.com">My Blog</a></li>
+                </ul>
+              </div>
+              <div class="social-links col-md-6">
+                <ul>
+                  <li><a href="https://www.facebook.com/rahmath.pkl" class="fb"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://twitter.com/rahmathullahm" class="tw"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="http://www.linkedin.com/in/rahmathm1" class="in"><i class="fa fa-linkedin "></i></a></li>
+                  <li><a href="https://github.com/rahmathm1/" class="gh"><i class="fa fa-github-alt"></i></a></li>
+                  <li><a href="mailto:rahmathm1@gmail.com" class="ml"><i class="fa fa-envelope-o"></i></a></li>
+                  <li><a href="http://stackoverflow.com/users/1470979/rahmathullah-m-pulikkal" class="so"><i class="fa fa-stack-overflow"></i></a></li>
+                  <li><a href="http://rahmathslab.blogspot.in/" class="bg"><i class="fa fa-rss"></i></a></li>
+                </ul>
+              </div>
             </div>
         </div>
-        <div class="row skill-set">
-        	<div class="col-md-2 col-md-offset-1 skill">Backbone JS</div>
-            <div class="col-md-2 skill">Phonegap</div>
-            <div class="col-md-2 skill">Angular JS</div>
-            <div class="col-md-2 skill">jQuery Mobile</div>
-            <div class="col-md-2 skill">jQuery</div>
-        </div>	
-        <div class="row skill-set">
-        	<div class="col-md-2 col-md-offset-1 skill">.Net</div>
-            <div class="col-md-2 skill">PHP-Codeigniter</div>
-            <div class="col-md-2 skill">Twitter Bootstrap</div>
-            <div class="col-md-2 skill">Android</div>
-            <div class="col-md-2 skill">IOS</div>
-        </div>	
-	</div>	
-</div>
-</body>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tweets.js"></script>
+  </body>
 </html>

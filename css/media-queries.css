@@ -1,0 +1,28 @@
+@media (max-width: 767px) {
+	.jumbotron h1{
+		font-size: 42px;
+	}
+	.jumbotron .big-img {
+		width: 100px;
+		height: 100px;
+		margin: 30px auto;
+	}
+	.jumbotron p{
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 768px) {
+	.jumbotron h1{
+		font-size: 82px;
+	}
+	.jumbotron .big-img {
+		width: 200px;
+		height: 200px;
+		margin: 30px auto;
+	}
+	.jumbotron p{
+		font-size: 23px;
+	}
+
+}
