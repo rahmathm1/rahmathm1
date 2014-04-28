@@ -23,7 +23,9 @@ h3 i {
 }
 h3.subhead {
 	border-bottom: 1px solid #18bc9c;
-	padding-bottom: 10px;
+padding-bottom: 10px;
+/*background: #eee;
+padding: 10px;*/
 }
 .qualifications h4 span,.experiences h4 span{
 	font-size: 12px;
