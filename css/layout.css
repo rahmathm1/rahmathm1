@@ -1,14 +1,68 @@
+html {
+
+text-rendering: optimizeLegibility !important;
+
+-webkit-font-smoothing: antialiased !important;
+
+}
+.navbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin-top: -60px;
+	z-index: 1000;
+	transition:0.5s;
+	-webkit-transition:0.5s;
+	-mox-transition:0.5s;
+}
+body {
+	background: #2C333D;
+	transition:0.5s;
+	-webkit-transition:0.5s;
+	-mox-transition:0.5s;
+}
+body.expanded {
+	background: #fff;
+}
+.expanded .navbar {
+	margin-top: 0;
+}
 .jumbotron {
 
 }
 .jumbotron h1{
 	text-align: center;
-	font-size: 82px;
 	margin-bottom: 0;
+	margin-top: 130px;
+	text-shadow: 0 0 20px rgba(0, 0, 0, 0.21);
+	color: #fff;
+	font-family: "Times New Roman", Times, serif;
 }
 .jumbotron p{
 	text-align: center;
 }
+.jumbotron.banner {
+	background-image: url(../images/banner.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+} 
+.jumbotron.banner h2 {
+	font-size: 22px;
+	color: #fff;
+	text-shadow: 0 0 15px rgba(0,0,0,0.8);
+	font-family: "Times New Roman", Times, serif;
+	letter-spacing: 18px;
+	text-align: center;
+	line-height: 34px;
+}
+.jumbotron.banner h1 > a {
+	color: #fff;
+	text-decoration: none;
+}
+.jumbotron.banner h2 span.heart { 
+	color: #BD0D37;
+	}
 .jumbotron .big-img {
 	width: 200px;
 	height: 200px;

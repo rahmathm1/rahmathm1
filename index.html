@@ -20,7 +20,7 @@
     <![endif]-->
   </head>
   <body>
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default rhmt-header" role="navigation">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -45,12 +45,13 @@
     </nav>
     <div class="container">
       <div class="row">
-        <div class="jumbotron">
-          <h1>Hi there,</h1>
-          <img class="img-responsive big-img img-circle" src="https://avatars0.githubusercontent.com/u/2988274?s=460" />
+        <div class="jumbotron banner">
+          <h1><a href="https://twitter.com/rahmathullahm" target="_blank">@rahmathullahm</a></h1>
+          <h2>A developer with intense l<span class="heart">♥</span>ve of Js.</h2>
+         <!--  <img class="img-responsive big-img img-circle" src="https://avatars0.githubusercontent.com/u/2988274?s=460" />
           <div class="row">
             <p class="col-md-8 col-md-offset-2">I'm a mobile application developer with a focus on HTML5 mobile apps and an intense love of JavaScript.</p>
-          </div>
+          </div> -->
           
         </div>
       </div>
@@ -263,5 +264,11 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/tweets.js"></script>
+     <script src="js/header-shrinker.js"></script>
+     <script type="text/javascript">
+        $(window).shrinkify({
+          pixelsFromTop: 200
+        });
+     </script>
   </body>
 </html>
