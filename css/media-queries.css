@@ -10,7 +10,7 @@
 	.jumbotron p{
 		font-size: 16px;
 	}
-	.jumbotron.banner {
+	.jumbotron {
 		height: 350px;
 		margin-top: 0;
 		margin-bottom: 30px;
@@ -37,8 +37,8 @@
 	.jumbotron p{
 		font-size: 23px;
 	}
-	.jumbotron.banner {
-		height: 650px;
+	.jumbotron {
+		height: 700px;
 	} 
 	.jumbotron h1 {
 		margin-top: 130px;

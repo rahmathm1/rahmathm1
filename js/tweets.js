@@ -15,19 +15,15 @@ f[a].setAttribute("aria-label",b);if(e[a].innerText)if(v)f[a].innerText=b;else{v
 "</p>",q&&(b+='<p class="timePosted">'+f[a].innerText+"</p>")):(r&&(b+='<p class="user">'+g[a].textContent+"</p>"),b+='<p class="tweet">'+e[a].textContent+"</p>",q&&(b+='<p class="timePosted">'+f[a].textContent+"</p>"));A&&(b+='<p class="interact"><a href="https://twitter.com/intent/tweet?in_reply_to='+h[a]+'" class="twitter_reply_icon">Reply</a><a href="https://twitter.com/intent/retweet?tweet_id='+h[a]+'" class="twitter_retweet_icon">Retweet</a><a href="https://twitter.com/intent/favorite?tweet_id='+
 h[a]+'" class="twitter_fav_icon">Favorite</a></p>');c.push(b);a++}if(null==w){e=c.length;g=0;f=document.getElementById(y);for(h="<ul>";g<e;)h+="<li>"+c[g]+"</li>",g++;f.innerHTML=h+"</ul>"}else w(c);t=!1;0<k.length&&(twitterFetcher.fetch(k[0].id,k[0].domId,k[0].maxTweets,k[0].enableLinks,k[0].showUser,k[0].showTime,k[0].dateFunction,k[0].showRt,k[0].customCallback,k[0].showInteraction),k.splice(0,1))}}}();
 
-twitterFetcher.fetch('459596929555365888', 'twitterbox', 5, true, true, true, '', false, handleTweets, false);
+twitterFetcher.fetch('433928719657218048', 'twitterbox', 5, true, true, true, '', false, handleTweets, false);
 
 function handleTweets(tweets){
     var x = tweets.length;
     var n = 0;
-    var element = document.getElementById('js-twitterbox');
-    $(element).empty();
+    var element = document.getElementById('twitterbox');
     $.each(tweets, function(index, val) {
         var p = $(val)[1];
-        var li = $('<li/>');
-        li.addClass('list-group-item')
         $(p).prepend('<span class="nue-tweet">@rahmathullahm</span> : ');
-        li.html(p);
-         $(element).append(li);
+         $(element).append(p);
 	});
 }
