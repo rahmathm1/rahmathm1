@@ -21,9 +21,10 @@ function handleTweets(tweets){
     var x = tweets.length;
     var n = 0;
     var element = document.getElementById('twitterbox');
-    $.each(tweets, function(index, val) {
-        var p = $(val)[1];
+    $(element).empty();
+   for (var i = 0; i < 3; i++) {
+        var p = $(tweets[0])[1];
         $(p).prepend('<span class="nue-tweet">@rahmathullahm</span> : ');
          $(element).append(p);
-	});
+	};
 }
