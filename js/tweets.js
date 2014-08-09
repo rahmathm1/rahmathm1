@@ -24,7 +24,7 @@ function handleTweets(tweets){
     $(element).empty();
    for (var i = 0; i < 1; i++) {
         var p = $(tweets[0])[1];
-        $(p).prepend('<span class="nue-tweet">@rahmathullahm</span> : ');
+        //$(p).prepend('<span class="nue-tweet">@rahmathullahm</span> : ');
          $(element).append(p);
 	};
 }
