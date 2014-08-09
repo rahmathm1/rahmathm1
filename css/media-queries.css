@@ -26,6 +26,11 @@
 }
 
 @media (min-width: 768px) {
+	.navbar-nav > li:after{
+	content: "\2f ";
+	margin: 0 10px;
+	color: #ccc;
+}
 	.jumbotron h1{
 		font-size: 82px;
 	}
