@@ -254,7 +254,7 @@ height: 30px;
 }
 .main-tweets {
 	margin:0;
-background-color: #26abe4;
+/*background-color: #26abe4;*/
 background-position: -250px 100px;
 background-repeat: no-repeat;
 background-image: url(../images/twitter-logo.png);
@@ -302,7 +302,7 @@ margin-top: 20px;
 padding: 15px;
 background-color: #fff;
 border: 0;
-color: #1B8CBD;
+color: #696969;
 font-size: 16px;
 text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.33);
 font-weight: 300;
@@ -500,10 +500,11 @@ font-weight: 300;
 .footer {
 	margin-left: 0;
 	margin-right: 0;
+	background: #5E6158;
 }
 .footer .main-tweets,.footer .blog-block,.footer .contact-block {
-	min-height: 300px;
-	border-bottom: 15px solid rgba(70, 70, 70, 0.5);
+	/*border-bottom: 15px solid rgba(70, 70, 70, 0.5);*/
+	min-height: 330px;
 }
 .footer .blog-block {
 	background: #5E6158;
@@ -528,12 +529,21 @@ font-weight: 300;
 .footer .blog-block p.blog-date {
 	font-size: 12px;
 }
-.footer .blog-block a.read-more {
+/*.footer .blog-block a.read-more {
 	font-size: 14px;
 	font-weight: 300;
 	color: #FFD961;
 	display: block;
+}*/
+.footer .blog-block a.read-more {
+	background-image: url('../images/rounded_arrow.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 40px;
+	display: block;
 }
+
 
 .footer .contact-block {
 	background-color: #6C9636;
@@ -601,7 +611,6 @@ margin-top: 10px;
 .social-links ul  li{
 	float: left;
 	height: 50px;
-	margin-left: 10px;
 }
 .social-links ul  li:hover{
 
@@ -609,15 +618,25 @@ margin-top: 10px;
 .social-links ul li a {
 	height: 40px;
 	width: 40px;
-	display: block;
+	display: inline-block;
 	color: #fff;
-	line-height: 55px;
+	line-height: 40px;
 	text-align: center;
 	/*border-radius: 50%;*/
 	transition:0.5s;
 }
 .social-links ul li a:hover {
 	color: #fff;
+}
+.social-links ul li:after {
+	content: '|';
+display: inline;
+color: #7CAA42;
+font-size: 18px;
+}
+.social-links ul li:last-child:after {
+	content: '';
+
 }
 .social-links ul li:first-child {
 	margin-left: 0;
