@@ -560,7 +560,9 @@ font-weight: 300;
 	background-color: #54742B;
 	color: #E3F6A5;
 	border:1px #4E6B28 solid;
-
+border-radius: 0;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
 }
 .footer .contact-block .btn:hover {
 	color: #fff;
@@ -666,6 +668,74 @@ font-size: 18px;
 	background-color: #aa1000;
 }
 
+body.modal-opened {
+	/*overflow: hidden;*/
+}
+.contact-modal {
+	position: fixed;
+	top: -100%;
+	opacity: 0;
+	right: 0;
+	left: 0;
+	bottom: 100%;
+	padding: 100px;
+	background-color: #ECECEC;
+	z-index: 9999;
+	-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+
+}
+body.modal-opened .contact-modal {
+	top: 0%;
+	bottom: 0%;
+	opacity: 1;
+}
+.contact-modal h2 {
+	font-size: 56px;
+margin: 20px 0 50px 0;
+font-weight: 200;
+color: #666;
+margin-top: 10px;
+}
+.contact-modal .close {
+	display: block;
+	position: absolute;
+	top:30px;
+	right: 30px;
+	width: 70px;
+	height: 70px;
+	background-image: url(../images/big-cross.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.contact-modal input[type=text],.contact-modal textarea {
+	font-size: 18px;
+padding: 15px 0;
+width: 100%;
+text-indent: 15px;
+margin: 0;
+font-family: 'Roboto' , sans-serif;	
+font-weight: 300;
+border: 1px solid #ccc;
+margin-bottom: 20px;
+}
+.contact-modal button {
+	-webkit-appearance: none;
+border: 1px solid;
+background-color: #6C9636;
+color: #fff;
+	font-size: 18px;
+padding: 15px 0;
+font-family: 'Roboto' , sans-serif;	
+font-weight: 300;
+width: 100%;
+}
+.contact-modal input[type=text].error,.contact-modal textarea.error {
+	border-bottom: 1px solid #FF839C;
+}
 /*.github-link .panel{
 	color: #666;
 }
