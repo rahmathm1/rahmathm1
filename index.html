@@ -193,12 +193,15 @@
           <div class="col-md-4 blog-block font-roboto">
             <h2 class="font-roboto">blog.thullah.com</h2>
 
-            <div class="col-md-12 ">
-              <h3 class="font-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-              <p class="blog-date">22d December, 2014</p>
-              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-              <a href="http://blog.thullah.com/" class="read-more"></a>
+            <div class="col-md-12 blog-wrapper">
+              <h3 class="font-roboto" id="blog-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+              <p class="blog-date" id="blog-date">22d December, 2014</p>
+              <p  id="blog-content">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+              <a href="http://blog.thullah.com/" id="blog-url"  target="_blank" class="read-more"></a>
             </div>
+             <div class="col-md-12 blog-loading">
+              Loading...
+             </div>
              
 
           </div>
@@ -258,6 +261,7 @@
      <script src="js/header-shrinker.js"></script>
      <script src="js/jquery.imagesloaded.js"></script>
      <script src="js/waypoints.min.js"></script>
+     <script src="http://momentjs.com/downloads/moment.min.js"></script>
      <script type="text/javascript">
         $(document).ready(function() {
           var windowHeight = $(window).height();
@@ -303,7 +307,13 @@
 
           $.get('http://blog.thullah.com/?json=get_recent_posts',function(response) {
               var latestPost= response.posts[0];
-              alert(latestPost.title);
+               $("#blog-title").html(latestPost.title_plain);
+               $("#blog-content").html(latestPost.excerpt);
+                $("#blog-content a").remove();
+               $("#blog-date").html("Posted on " + new moment(latestPost.date).format('MMMM Do YYYY, h:mm:ss a'));
+               $("#blog-url").attr("href",latestPost.url);
+               $('.blog-loading').hide();
+               $('.blog-wrapper').show();
           });
         }); 
      </script>
