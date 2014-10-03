@@ -284,12 +284,8 @@ text-align: center;
 padding-top: 40px;
 }
 .main-tweets .tweet {
-	border-bottom: 1px solid #51BDEC;
-	font-size: 14px;
-margin-bottom: 15px;
-padding: 10px 0;
-line-height: 24px;
-padding: 10px;
+	font-size: 16px;
+font-weight: 300;
 }
 .main-tweets .tweet:last-child {
 	border-bottom: 0;
