@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
 
 html {
 
@@ -22,14 +23,14 @@ text-decoration: none;
 	top: 0;
 	right: 0;
 	left: 0;
-	margin-top: -60px;
+	/*margin-top: -60px;*/
 	z-index: 1000;
 	transition:0.5s;
 	-webkit-transition:0.5s;
 	-mox-transition:0.5s;
 	font-weight: 300;
-	background: #fff;
-	border-bottom: 1px dotted #D6D6D6;
+	background: transparent;
+	/*border-bottom: 1px dotted #D6D6D6;*/
 }
 .navbar .navbar-brand {
 font-weight: 300;
@@ -39,7 +40,7 @@ font-size: 24px;
 	color: #888;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	background: #fff;
+	background:transparent;
 	color: #18bc9c;
 }
 
@@ -50,7 +51,7 @@ display: inline-block;
 	content: '';
 }
 body {
-	background: #1E2229;
+	
 	transition:0.5s;
 	-webkit-transition:0.5s;
 	-mox-transition:0.5s;
@@ -58,8 +59,11 @@ body {
 body.expanded {
 	background: #fff;
 }
+.camera_wrap {
+	height: 100%;
+}
 .expanded .navbar {
-	margin-top: 0;
+	background: rgba(255,255,255,1);
 }
 .jumbotron {
 	margin-bottom: 0;
@@ -76,10 +80,10 @@ body.expanded {
 	text-align: center;
 }
 .jumbotron.banner {
-	background-image: url(../images/banner.png);
+	background-image: url(../images/slide1.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	background: url(../images/banner.png) no-repeat center bottom fixed;
+	background: url(../images/slide1.png) no-repeat center bottom fixed;
 background-size: cover;
 /*	transition:1s;*/
 } 
@@ -309,7 +313,100 @@ box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.27);
 	background-color: #f5f5f5;
 
 }
+.row.fullwidh {
+	margin: 0;
+}
+.testimonials {
+	padding: 25px 10px;
+	background: #fff;
+	position: relative;;
+}
+.testimonials, .skills {
+	min-height: 410px;
+}
+.testimonials h2, .skills h2{
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: .2em;
+text-transform: uppercase;
+font-size: 3em;
+text-align: center;
+margin: 20px 0;
+color: #fff;
+margin-bottom: 50px;
+}
+.testimonials h2 {
+	color: #666;
+}
+.skills ul.pills {
+	margin: 40px 10px;
+}
+.skills {
+	background-color: rgb(255, 87, 88);
+		padding: 25px 10px;
+}
+.skills ul.pills {
+	text-align: center;
+}
+.skills ul.pills li {
+/* -webkit-border-radius: 30px; */
+/* border-radius: 30px; */
+border: 2px solid rgba(255, 255, 255, 0.8);
+cursor: default;
+display: inline-block;
+margin: 0 .25em .75em;
+padding: .5em 1em .58em;
+white-space: nowrap;
+color: #fff;
+font-weight: 300;
+font-size: 15px;
+}
+.skills ul.pills li:last-child {
+	background: rgba(255,255,255,0.1);
+}
+.testimonials .one-testi {
+	margin:30px 30px;
 
+}
+.testimonials .one-testi .testi-testi {
+	padding-left: 30px;
+background: url(../images/open-quote.png) 0 0 no-repeat;
+font-style: italic;
+font-size: 13px;
+
+
+}
+.testimonials .one-testi  img {
+	width: 100%;
+}
+.testimonials .one-testi .testi-author { 
+	font-weight: normal;
+	font-family: 'Oswald', sans-serif;
+	margin-top: 8px;
+	margin-bottom: 0;
+	color: #2A73BB;
+}
+.testimonials .one-testi .testi-author-desig { 
+	font-weight: normal;
+	font-size: 14px;
+	font-style: italic;
+}
+.testimonials a.read-more{
+/* position: absolute; */
+/* bottom: 20px; */
+/* right: 0; */
+/* display: block; */
+/* padding: 16px; */
+/* width: 200px; */
+/* background: #EDEDED; */
+/* border: 1px solid #999; */
+color: #333;
+font-size: 18px;
+font-weight: 200;
+text-align: right;
+margin-top: 20px;
+/* clear: both; */
+padding-left: 30px;
+}
 
 .main-technology {
 	padding: 25px 10px;
@@ -693,6 +790,10 @@ body.modal-opened {
 	bottom: 100%;
 	padding: 100px;
 	background-color: #ECECEC;
+	background-image: url(../images/bg_contact.png);
+	background-position: top;;
+	background-repeat: no-repeat;;
+	background-size: 100% auto;
 	z-index: 9999;
 	-webkit-transition: all 0.5s ease-in-out;
 -moz-transition: all 0.5s ease-in-out;
