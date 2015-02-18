@@ -196,7 +196,7 @@ body {
 	top: 0;
 	bottom: 0;
 	width: 300px;
-	background: #26292a;
+	background: #11191D;
 	z-index: 1000;
 	transition:0.5s;
 	text-align: center;
@@ -222,7 +222,7 @@ body {
 	letter-spacing: 2px;
 }
 .side-menu .navmenu-nav li a:hover {
-	background: #222425;
+	background: #0E1518;
 	color: #e74c3c;
 }
 .side-menu .my-name {
@@ -284,7 +284,7 @@ body {
 .social-links ul li:first-child {
 	margin-left: 0;
 }
-.social-links ul  li a.fb:hover {
+/*.social-links ul  li a.fb:hover {
 	color: #3b5996;
 }
 .social-links ul  li a.in:hover {
@@ -307,10 +307,10 @@ body {
 }
 .social-links ul  li a.bg:hover {
 	color: #aa1000;
-}
+}*/
 .social-links ul  li a:hover {
 	tranform:scale(1.5);
-	-webkit-transform: scale(1.4);
+	-webkit-transform: translateY(-4px);
 }
 
 
@@ -376,7 +376,7 @@ body {
 
 /* main bio */
 .content-body {
-	background: #17191A;
+	background: #141D22;
 	padding: 1px 0;
 	
 }
@@ -471,8 +471,13 @@ text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.36);
 	color: #fff;
 	font-size: 22px;
 }
+.work .desc h5 {
+	text-transform: uppercase;
+}
 .work .desc p {
 	opacity: 0.9;
+color: #ddd;
+text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 .work .view-details{
 	font-weight: 200;
